@@ -2,7 +2,8 @@
     "name": "angularjs-base",
     "version": "0.0.1",
     "scripts": {
-        "build": "browserify src/index.js | uglifyjs > dist/index.js"
+        "build": "browserify src/bootstrap.js | uglifyjs > dist/app.js",
+        "build-deps": "browserify src/bootstrap-deps.js | uglifyjs > dist/app-deps.js"
     },
     "devDependencies": {
         "browserify": "^16.5.1",
